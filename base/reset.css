@@ -1,0 +1,47 @@
+html
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: var(--fonte-poppins);
+	font-size: 16px;
+	font-weight: unset;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+
+body {
+	background-color: var(--branco);
+}
+
+
+a {
+	text-decoration: none;
+}
+
+button {
+	background-color: unset;
+	cursor: pointer;
+}
+
+ol.
+ul {
+list-style: none;
+}
+
+svg {
+	display: block;
+}
+
+::placerholder  {
+	color: var(--cinza-nobel);
+	fonte-size: 0.8rem;
+}
+
+tfieldset {
+	border: none
+}
