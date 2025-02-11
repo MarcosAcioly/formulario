@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+<meta charset="UTF-8">
+<meta name="port" content="width=device-width, initial-scale=1.0">
+
+<title>Lista de Tarefas</title>
+</head>
+
+<body>
+    <link rel="stylesheet" href='base/global.css'>
+
+
+
+
+    <main>
+
+
+
+
+
+        <div class="titulo">
+            <h1>Tarefas Teste</h1>     
+        </div>
+        <div class="um">
+
+
+
+        <div class="container">
+            <div class="form-group">
+                <label for="titulo">Título</label>
+                <input type="text" id="titulo" placeholder="Ex: Revisar código crítico">
+            </div>
+            <div class="form-group">
+                <label for="prioridade">Prioridade</label>
+                <select id="prioridade">
+                    <option>Alta</option>
+                    <option>Média</option>
+                    <option>Baixa</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="data">Data</label>
+                <input type="date" id="data">
+            </div>
+            <div class="form-group">
+                <label for="descricao">Descrição</label>
+                <textarea id="descricao" placeholder="Revisar bugs críticos no módulo principal."></textarea>
+            </div>
+            <div class="form-group">
+                <label>Responsável(is):</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox"> Alice</label>
+                    <label><input type="checkbox"> Carlos</label>
+                    <label><input type="checkbox"> Fabiano</label>
+                    <label><input type="checkbox"> Fernanda</label>
+                    <label><input type="checkbox"> Luísa</label>
+                    <label><input type="checkbox"> Marcos</label>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="clear-btn" onclick="limparFormulario()">Limpar</button>
+                <button class="add-btn" onclick="adicionarTarefa()">Adicionar</button>
+            </div>
+        </div>
+
+
+
+
+        <!--
+        <div class="titulo">
+            <h1>Tarefas</h1>     
+        </div>
+        <div class="um">
+
+     
+            <ul>
+
+            <li class="tarefa">
+                <div class="etiquetas">
+                    <div class="etiqueta_prioridade">Alta</div>
+                    <div class="etiqueta">12/12/2012</div>
+                    <div class="etiqueta">Luisa</div>
+                    <div class="etiqueta">Fabiano</div>
+                </div>
+
+                <div class="descricao_tarefa">
+                    <h2>Revisar código crítico</h2>
+                    <p>Revisaar bugs críticos no modulo principal.</p>
+                </div>
+            </li>
+
+
+    <li class="tarefa">
+        <div class="etiquetas">
+            <div class="etiqueta_prioridade">Média</div>
+            <div class="etiqueta">12/12/2012</div>
+            <div class="etiqueta">Alice</div>
+            <div class="etiqueta">Carlos</div>
+        </div>
+
+        <div class="descricao_tarefa">
+            <h2>Implementar documentação</h2>
+            <p>Adicionar sistema de login seguro.</p>
+        </div>
+    </li>
+
+
+    <li class="tarefa">
+        <div class="etiquetas">
+            <div class="etiqueta_prioridade">Média</div>
+            <div class="etiqueta">19/12/2012</div>
+            <div class="etiqueta">Fernando</div>
+        </div>
+
+        <div class="descricao_tarefa">
+            <h2>Atualizar documentação</h2>
+            <p>Documentar novas funcionalidade e APIs.</p>
+        </div>
+    </li>
+
+
+
+    <li class="tarefa">
+        <div class="etiquetas">
+            <div class="etiqueta_prioridade">Baixa</div>
+            <div class="etiqueta">12/12/2012</div>
+            <div class="etiqueta">Luisa</div>
+        </div>
+
+        <div class="descricao_tarefa">
+            <h2>Otimizar consultas SQL</h2>
+            <p>Melhorar estrutura e legibilidade do código antigo.</p>
+        </div>
+    </li>
+
+
+    <li class="tarefa">
+        <div class="etiquetas">
+            <div class="etiqueta_prioridade">Baixa</div>
+            <div class="etiqueta">10/12/2012</div>
+            <div class="etiqueta">Fernando</div>
+        </div>
+
+        <div class="descricao_tarefa">
+            <h2>Revisar design responsivo</h2>
+            <p>Garantir que o site funcione em todos os dispositivos.</p>
+        </div>
+    </li>
+            </ul>
+        </div>
+    </main>
+    -->
+    <script src="js/app.js" type="module"></script>
+</body>
+</html>
+    
