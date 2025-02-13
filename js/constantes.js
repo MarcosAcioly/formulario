@@ -56,4 +56,8 @@ function limparFormulario() {
 function adicionarTarefa() {
     alert("Tarefa adicionada com sucesso!");
 }
-</script>
+
+
+
+
+

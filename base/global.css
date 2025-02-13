@@ -4,9 +4,8 @@
 @import url('../css/tarefa.css');
 @import url('../css/formulario.css');
 
-.conteudo-principa{
+.conteudo-principal{
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
-
 }

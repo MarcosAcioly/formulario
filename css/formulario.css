@@ -83,26 +83,11 @@
 }
 
 
+.formulario-botoes--limpar--adicionar{
+    padding: 4px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: inherit;
+    gap: 24px;  
+}
 
-
-
-
-<div class="buttons">
-            <button class="clear-btn" onclick="limparFormulario()">Limpar</button>
-            <button class="add-btn" onclick="adicionarTarefa()">Adicionar</button>
-        </div>
-    </div>
-
-    <script>
-        function limparFormulario() {
-            document.getElementById("titulo").value = "";
-            document.getElementById("descricao").value = "";
-            document.getElementById("prioridade").selectedIndex = 0;
-            document.getElementById("data").value = "";
-            document.querySelectorAll("input[type=checkbox]").forEach(checkbox => checkbox.checked = false);
-        }
-        
-        function adicionarTarefa() {
-            alert("Tarefa adicionada com sucesso!");
-        }
-    </script>
