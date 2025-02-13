@@ -40,11 +40,6 @@ const TAREFAS = [
 }
 
 
-]
-
-
-
-
 function limparFormulario() {
     document.getElementById("titulo").value = "";
     document.getElementById("descricao").value = "";
