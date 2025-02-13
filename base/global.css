@@ -2,3 +2,11 @@
 @import url('./variaveis.css');
 @import url('./reset.css');
 @import url('../css/tarefa.css');
+@import url('../css/formulario.css');
+
+.conteudo-principa{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+
+}

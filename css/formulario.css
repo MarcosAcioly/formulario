@@ -1,0 +1,108 @@
+
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;    
+}
+
+
+
+
+/*Estilizar o formulário principal*/
+.formulario-tarefas{
+    border: 1px solid var(--cinza-tundora);
+    padding: 40px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column ;
+    gap: 24px;
+}
+
+/*Estilizar cada linha que ocupa a largura inteira*/
+.formulario-tarefas--linha-inteira{
+    margin-bottom: 16px;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+/*Estilizar as colunas que ocupam a metade da inteira*/
+.formulario-tarefas--linha-metade{
+    display: flex;
+    gap: 24px;
+    width: 100%;
+}
+
+
+.formulario-tarefas--coluna{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+}
+
+
+.container__checkbox{
+
+    padding: 40x;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: initial;
+    gap: 24px;
+}
+
+
+.container__checkbox-item{
+
+    padding: 4px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: initial;
+    gap: 24px;   
+}
+
+
+.container__checkbox2{
+
+    padding: 4px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: initial;
+    gap: 24px;
+}
+
+
+.container__checkbox-item{
+
+    padding: 4px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: initial;
+    gap: 24px;   
+}
+
+
+
+
+
+
+<div class="buttons">
+            <button class="clear-btn" onclick="limparFormulario()">Limpar</button>
+            <button class="add-btn" onclick="adicionarTarefa()">Adicionar</button>
+        </div>
+    </div>
+
+    <script>
+        function limparFormulario() {
+            document.getElementById("titulo").value = "";
+            document.getElementById("descricao").value = "";
+            document.getElementById("prioridade").selectedIndex = 0;
+            document.getElementById("data").value = "";
+            document.querySelectorAll("input[type=checkbox]").forEach(checkbox => checkbox.checked = false);
+        }
+        
+        function adicionarTarefa() {
+            alert("Tarefa adicionada com sucesso!");
+        }
+    </script>

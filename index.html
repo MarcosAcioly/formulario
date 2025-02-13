@@ -5,66 +5,96 @@
 <meta charset="UTF-8">
 <meta name="port" content="width=device-width, initial-scale=1.0">
 
+<link rel="stylesheet" href='base/global.css'>
+
 <title>Lista de Tarefas</title>
 </head>
 
 <body>
-    <link rel="stylesheet" href='base/global.css'>
+    <div class="conteudo-principal">
+    <form class="formulario-tarefas">
+            <div class="formulario-tarefas--linha-inteira">
+                <div class="formulario-tarefas--linha-metade">
+                    <div class="formulario-tarefas--coluna">
+                        <label>Título</label>
+                        <input>
+                    </div>
 
+                <div class="formulario-tarefas--linha-metade">
+                    <div class="formulario-tarefas--coluna">
+                        <label>Prioridade</label>
+                        <select>
+                            <option>Alta</option>
+                        </select>
+                    </div>
 
+                    <div class="formulario-tarefas--coluna">
+                        <label for="data">Data</label>
+                        <input type="date" id="data">
+                    </div>
+                </div>
 
-
-    <main>
-
-
-
-
-
-        <div class="titulo">
-            <h1>Tarefas Teste</h1>     
-        </div>
-        <div class="um">
-
-
-
-        <div class="container">
-            <div class="form-group">
-                <label for="titulo">Título</label>
-                <input type="text" id="titulo" placeholder="Ex: Revisar código crítico">
             </div>
-            <div class="form-group">
-                <label for="prioridade">Prioridade</label>
-                <select id="prioridade">
-                    <option>Alta</option>
-                    <option>Média</option>
-                    <option>Baixa</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="data">Data</label>
-                <input type="date" id="data">
-            </div>
-            <div class="form-group">
-                <label for="descricao">Descrição</label>
-                <textarea id="descricao" placeholder="Revisar bugs críticos no módulo principal."></textarea>
-            </div>
-            <div class="form-group">
-                <label>Responsável(is):</label>
-                <div class="checkbox-group">
-                    <label><input type="checkbox"> Alice</label>
-                    <label><input type="checkbox"> Carlos</label>
-                    <label><input type="checkbox"> Fabiano</label>
-                    <label><input type="checkbox"> Fernanda</label>
-                    <label><input type="checkbox"> Luísa</label>
-                    <label><input type="checkbox"> Marcos</label>
+            
+            <div class="formulario-tarefas--linha-inteira"> 
+                <div class="formulario-tarefas--coluna">
+                    <label>Descrição</label>
+                    <textarea></textarea>
                 </div>
             </div>
-            <div class="buttons">
-                <button class="clear-btn" onclick="limparFormulario()">Limpar</button>
-                <button class="add-btn" onclick="adicionarTarefa()">Adicionar</button>
+     
+            <div class="formulario-tarefas--coluna">
+                
+                <label>Responsável(is):</label>
+                    <div class="container__checkbox">                 
+                       
+                        <div class="container__checkbox-item">
+                            <input type="checkbox" id="cb1">
+                            <label for="cb1">Alice</label>
+                        </div>
+
+                        <div class="container__checkbox-item">
+                            <input type="checkbox" id="cb2">
+                            <label for="cb2">Carlos</label>
+                        </div>
+                        
+                        <div class="container__checkbox-item">
+                            <input type="checkbox" id="cb3">
+                            <label for="cb3">Fabiano</label>
+                        </div>
+                        
+                        <div class="container__checkbox-item">
+                            <input type="checkbox" id="cb4">
+                            <label for="cb4">Fernanda</label>
+                        </div>
+                    </div>
+                        
+                    <div class="container__checkbox2">     
+
+
+                        <div class="container__checkbox-item">
+                            <input type="checkbox" id="cb5">
+                            <label for="cb5">Luisa</label>
+                        </div>
+                        
+                        <div class="container__checkbox-item">
+                            <input type="checkbox" id="cb6">
+                            <label for="cb6">Marcos</label>
+                        </div>
+                                        
+                    </div>
             </div>
+       
         </div>
 
+
+        <div class="formulario-tarefas--linha-inteira">
+            <button>Limpar</button>
+            <button>Adicionar</button>
+        </div>
+    </form>
+    
+    <main>
 
 
 
@@ -153,6 +183,7 @@
     </main>
     -->
     <script src="js/app.js" type="module"></script>
+</div>
 </body>
 </html>
     
